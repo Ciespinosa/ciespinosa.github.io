@@ -1,77 +1,73 @@
 /*
-	Miniport by HTML5 UP
+	Phantom by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Basic */
+/* Form */
 
-	form input[type=text],
-	form input[type=password],
-	form select,
-	form textarea {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+	form .field {
+		float: none !important;
+		width: 100% !important;
+		padding-left: 0 !important;
 	}
 
-	input[type="button"],
+/* Button */
+
 	input[type="submit"],
 	input[type="reset"],
+	input[type="button"],
 	button,
 	.button {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+		border: solid 2px #585858 !important;
 	}
 
-/* Section/Article */
-
-	section > .last-child,
-	article > .last-child,
-	section.last-child,
-	article.last-child {
-		margin-bottom: 0;
-	}
-
-/* Box */
-
-	.box {
-		border: solid 1px #ddd;
-	}
-
-/* List */
-
-	ul.social li a {
-		position: relative;
-		top: 0 !important;
-		overflow: hidden;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
-	}
-
-		ul.social li a:before {
-			background: none;
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			border-color: #f2849e !important;
 		}
 
-/* Wrappers */
+		input[type="submit"].special,
+		input[type="reset"].special,
+		input[type="button"].special,
+		button.special,
+		.button.special {
+			border: none !important;
+		}
 
-	.wrapper {
-		border-top: solid 1px #ddd;
+/* Tiles */
+
+	.tiles article > .image:before, .tiles article > .image:after {
+		display: none;
 	}
 
-/* Nav */
+/* Header */
 
-	#nav a {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+	#header .logo .symbol {
+		display: none;
 	}
 
-/* Articles */
-
-	#top .image {
-		position: relative;
-		-ms-behavior: url("assets/js/ie/PIE.htc");
+	#header nav ul li a[href="#menu"] {
+		text-indent: 0;
+		width: auto;
+		font-size: 0.8em;
 	}
 
-		#top .image img {
-			position: relative;
-			-ms-behavior: url("assets/js/ie/PIE.htc");
+		#header nav ul li a[href="#menu"]:before, #header nav ul li a[href="#menu"]:after {
+			display: none;
+		}
+
+/* Footer */
+
+	#footer > .inner section {
+		width: 50%;
+		margin-left: 3em;
+	}
+
+		#footer > .inner section:first-child {
+			margin-left: 0;
+			width: 40%;
 		}
