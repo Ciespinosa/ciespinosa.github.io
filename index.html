@@ -59,7 +59,7 @@
 							 	<h1>Ecología en Práctica<br /></h1>
 								<h2>Este es un repositorio de prácticas para enseñanza de ecología </h2>  
 								
-								<p>Uno de los problemas más grandes para las personas que inician sus carreras en temas de biodiversidad y ecología es encontrar recursos en idioma español. A continuación pongo a su disposición una serie de pequeñas prácticas que espero sean de su interés y que aporten a comprender el uso de herramientas estadísticas para el análisis de poblaciones y comunidades naturales.  Una gran parte de este material esta basado en el libro de Henrry Stevens "A Primer of Ecology with R"</p>
+								<p>Uno de los problemas más grandes para las personas que inician sus carreras en temas de biodiversidad y ecología es encontrar recursos en idioma español. A continuación pongo a su disposición una serie de pequeñas prácticas que espero sean de su interés y que aporten a comprender el uso de herramientas estadísticas para el análisis de poblaciones y comunidades naturales.  </p>
 							</header>
 							<section class="tiles">
 								<article class="style2">
@@ -127,31 +127,41 @@
 					<footer id="footer">
 						<div class="inner">
 							<section>
-								<h2>Contactame</h2>
-								<form method="post" action="#">
-									<div class="field half first">
-										<input type="text" name="name" id="name" placeholder="Name" />
+							  <h2>Contactame</h2>
+							  <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSdZvt6BSLWcFHSu9k7_0ScQmhR-IxW8yExercUklbcoSfooqg//formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+							    <div class="field half first">
+										<input type="text" name="entry.1136233287" id="entry.1136233287" placeholder="Nombre completo" />
 									</div>
 									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions">
+										<input type="text" name="entry.716480553" id="entry.716480553" placeholder="Email" />
+               </div>
+  	<div class="field">
+										<textarea type="text" name="entry.1677489895" id="entry.1677489895" placeholder="Mensaje"></textarea>
+										</div>
+<ul class="actions">
 										<li><input type="submit" value="Send" class="special" /></li>
 									</ul>
-								</form>
+  
+</form>
+
+<script src="assets/js/jquery.min.js"></script>
+<script type="text/javascript">var submitted=false;</script>
+<script type="text/javascript">
+$('#gform').on('submit', function(e) {
+  $('#gform *').fadeOut(2000);
+  $('#gform').prepend('Gracias por tu aporte, tu envío ha sido procesado');
+  });
+</script>
+
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>  
+					
 							</section>
 							<section>
 								<h2>Follow</h2>
 								<ul class="icons">
 									<li><a href="https://twitter.com/civanespinosa?lang=es" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://github.com/Ciespinosa" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile" class="icon style2 fa-phone"><span class="label">phone</span></a></li>
-									<li><a href="ciespinosa@utpl.edu.ec" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
+									</section>
 							<ul class="copyright">
 								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>

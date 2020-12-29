@@ -1,9 +1,9 @@
 {
-    "path" : "C:/Users/ciesp/OneDrive/Documentos/GitHub/ciespinosa.github.io",
-    "sortOrder" : [
+    "path": "C:/Users/ciesp/OneDrive/Documentos/GitHub/ciespinosa.github.io/images",
+    "sortOrder": [
         {
-            "ascending" : true,
-            "columnIndex" : 2
+            "columnIndex": 2,
+            "ascending": true
         }
     ]
 }
